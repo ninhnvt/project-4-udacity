@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'starter/frontend/**'
+      - starter/frontend/**
   #workflow_dispatch:  # Allow manual triggering
   pull_request:
     types: [closed]
