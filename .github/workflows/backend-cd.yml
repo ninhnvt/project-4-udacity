@@ -14,7 +14,7 @@ on:
 
 jobs:
   Linting:
-    if: github.event.pull_request.merged == true
+    #if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     environment: Devlopment Environment
 
@@ -37,7 +37,7 @@ jobs:
     - name: Checkout Run Lint
       run: cd starter/backend && pipenv run lint
   Test:
-    if: github.event.pull_request.merged == true
+    #if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
